@@ -7,5 +7,7 @@ exports.add =(title,actor)=>{
         movie: title,
         actor: actor
     }
+    let str = JSON.stringify(Movie)
+
     fs.writeFileSync('./netflix.json', str)
 }
